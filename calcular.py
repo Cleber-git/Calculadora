@@ -5,3 +5,5 @@ for c in range(1, 11):
     print(f'{num} x {c} = {num * c}')
     sleep(2)
 print('-'* 30)
+
+print('fim do progranma')
