@@ -7,7 +7,7 @@ rot = Tk()
 rot.title('Relógio criado com python')
 
 def time():
-    str = strftime('%H:%M:%S %p')
+    str = strftime('%H:%M:%S')
     label.config(text=str)
     label.after(1000, time)
 
