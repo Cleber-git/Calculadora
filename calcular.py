@@ -7,4 +7,3 @@ for c in range(1, 11):
 print('-'* 30)
 
 print('fim do progranma')
-print('testando novamente')
