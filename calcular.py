@@ -6,4 +6,4 @@ for c in range(1, 11):
     sleep(2)
 print('-'* 30)
 
-print('fim do progranma')
+print('fim do programa')
