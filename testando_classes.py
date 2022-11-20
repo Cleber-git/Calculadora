@@ -31,7 +31,8 @@ class carro:
 
 cleber = carro('fiat', 2002, 'Cleber Neves')
 arthur = carro('creta', 2022, 'Arthur Neves')
-
+print('-=' * 30)
 cleber.ligar()
 cleber.acelerar(30)
 cleber.show()
+print('-=' * 30)
