@@ -17,13 +17,24 @@ def CreateFile(arquivo):
         print('O arquivo já existe!')
 
 
-def WriteText(arquivo, text=''):
-    text = str(input('Digite o texto: '))
+def WriteText(arquivo):
+    nome = str(input('Digite o nome> '))
+    idade = int(input('Digite a idade> '))
     a = open(arquivo, 'at')
-    a.write(text)
+    a.write(f'{nome:<10}{idade:>10}\n')
 
 
 def ReadFile(arquivo):
         a = open(arquivo, 'rt')
         print(a.read())
         a.close()
+
+def menu(txt):
+    for k, v in enumerate(txt):
+        print(f'\033[32m{k+1}-\033[m \033[34m{v}\033[m')
+
+def linha(txt):
+    tam = len(txt) + 4
+    print('-' * tam)
+    print(txt.center(tam))
+    print('-' * tam)
