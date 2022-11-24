@@ -4,6 +4,8 @@ while True:
     linha('MENU DE CADASTRO')
     menu(['Criar arquivo','Cadastrar uma pessoa', 'Ver lista', 'Sair do sistema'])
     print('-'*20)
+
+    
     escolha = int(input('Digite o número correspondente ao que deseja fazer> '))
     if escolha == 4:
         break

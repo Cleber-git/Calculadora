@@ -13,6 +13,8 @@ pessoas = {
     'idade': [20, 19, 17, 21, 26, 20],
     'sexo': ['Masculino', 'Masculino', 'Feminino', 'Feminino', 'Masculino', 'Feminino']
 }
+
+
 vendas_df = pd.DataFrame(vendas)
 # print(vendas_df)
 
