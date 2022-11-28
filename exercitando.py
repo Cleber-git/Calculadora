@@ -49,8 +49,8 @@ while True:
     print('-=' * 30)
     print(f'JOGADOR: {Jogador}')
     print(f'MÁQUINA: {máquina}')
+    print(f'RESULTADO: ', end='')
     print('-=' * 30)
-    print()
     if Jogador == máquina:
         print('\033[33mEmpate!\033[m')
         escolha = str(input('Deseja continuar? ')).strip().upper()[0]
@@ -68,6 +68,7 @@ while True:
     else:
         print('\033[34mParabéns, Você venceu!!\033[m')
         break
+    print()
 print()    
 print('-= '* 30)
 print()    
