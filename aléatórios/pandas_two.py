@@ -17,6 +17,7 @@ vendas_df = vendas_df.head(10)
 vendas_df = vendas_df.loc[:, ['ID Loja', 'Produto', 'Valor Unitário']]
 # print(vendas_df)
 
+
 #  deletar coluna específica 
 # vendas_df = vendas_df.drop('ID Loja', axis=1)
 # print(vendas_df)
