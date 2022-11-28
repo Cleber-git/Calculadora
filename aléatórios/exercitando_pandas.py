@@ -8,10 +8,11 @@ vendas = {
 
 
 pessoas = {
-    'nome':['Cleber', 'Arthur', 'Larissa', 'Louize', 'Leone', 'Jaqueline'],
-    'sobrenome':['Gonçalves', 'Gonçalves', 'Adorno', 'Santana', 'Alberto', 'Gonçalves'],
-    'idade': [20, 19, 17, 21, 26, 20],
-    'sexo': ['Masculino', 'Masculino', 'Feminino', 'Feminino', 'Masculino', 'Feminino']
+    
+    'Nome':['Cleber', 'Arthur', 'Larissa', 'Louize', 'Leone', 'Jaqueline'],
+    'Sobrenome':['Gonçalves', 'Gonçalves', 'Adorno', 'Santana', 'Alberto', 'Gonçalves'],
+    'Idade': [20, 19, 17, 21, 26, 20],
+    'Sexo': ['Masculino', 'Masculino', 'Feminino', 'Feminino', 'Masculino', 'Feminino']
 }
 
 
@@ -43,8 +44,14 @@ linha = vendas_df.loc[0:3]
 # Outro grupo de dataframe
 pessoas_df = pd.DataFrame(pessoas)
 # print(pessoas_df)
-meninas = pessoas_df.loc[pessoas_df['sexo'] == 'Feminino']
+meninas = pessoas_df.loc[pessoas_df['Sexo'] == 'Feminino']
+# print()
+# print(meninas)
+# print('-=' * 25)
+# print()
+
+#Criando mais uma coluna
+pessoas_df['Natalidade'] = 'Coração de Maria'
 print()
-print(meninas)
-print('-=' * 25)
+print(pessoas_df)
 print()
