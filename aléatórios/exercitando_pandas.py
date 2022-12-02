@@ -43,6 +43,8 @@ linha = vendas_df.loc[0:3]
 
 # Outro grupo de dataframe
 pessoas_df = pd.DataFrame(pessoas)
+pessoas_df.to_excel('./pessoas.xlsx')
+print(pessoas_df)
 # print(pessoas_df)
 meninas = pessoas_df.loc[pessoas_df['Sexo'] == 'Feminino']
 # print()
@@ -51,7 +53,10 @@ meninas = pessoas_df.loc[pessoas_df['Sexo'] == 'Feminino']
 # print()
 
 #Criando mais uma coluna
-pessoas_df['Natalidade'] = 'Coração de Maria'
-print()
-print(pessoas_df)
-print()
+# pessoas_df['Natalidade'] = 'Coração de Maria'
+# print()
+# print(pessoas_df)
+# print()
+
+# gerando excel com pandas
+

@@ -1,13 +1,20 @@
-def valor_h(salário, horas_dia):
-    horas_mês = horas_dia * 21
-    valor_hora = salário / horas_mês 
+import math
+def miniMax(arr):
+    somamin = arr[1:].sum()
+    somamax = arr[:-2].sum()
+    print(f'{somamin} {somamax}')
 
-    return valor_hora
+# miniMax([1, 2, 3, 4, 5])
+maximo = []
+minimo = []
+lista = [1, 2, 3, 4, 5]
+minimo.append(min(lista))
+for c in range(1,4):
+    minimo.append(min(lista[c:]))
 
+for c in range(1, 5):
+    maximo.append(max(lista[-1:c]))
 
-# programa principal
-sal = float(input('Digite seu salário: '))
-horas = int(input('Digite a sua carga horária por dia: '))
-resultado = valor_h(sal, horas)
+print(maximo)
+print(minimo)
 
-print(f'Sua hora de trabalho custa R${resultado:.2f}.')
