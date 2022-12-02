@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: rgba(17, 16, 16, 0.877);
+    background-color: rgba(11, 2, 34, 0.877);
 }
 
 img.lado{
@@ -19,9 +19,9 @@ img.esquerdo{
 
 
 main{
-    background-color: black;
+    background-color: rgb(27, 30, 34);
     width:700px;
     margin: auto;
     padding: 50px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.24);
 }
